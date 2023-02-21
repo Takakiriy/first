@@ -1,0 +1,17 @@
+format_version: 10
+pipelines:
+    firstPipeline:  #// pipeline name
+        group: defaultGroup
+        materials:
+            git-1:
+                git: https://github.com/Takakiriy/first/
+                branch: main
+        stages:
+            -   firstStage:  #// stage name
+                    jobs:
+                        firstJob:  #// job name
+                            tasks:
+                                -   exec:
+                                        command: ls
+                                        arguments:
+                                            -   -la
