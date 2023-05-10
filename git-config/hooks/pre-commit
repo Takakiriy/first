@@ -1,0 +1,4 @@
+#!/bin/sh
+echo  ""
+echo  "[ERROR] To commit in this work is disabled by __Project__/git-config/hooks/pre-commit"
+exit  1
